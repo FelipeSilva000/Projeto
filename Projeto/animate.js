@@ -12,3 +12,10 @@ $(document).ready(function (){
     });
 });
 
+
+const botao = document.getElementById('pedido');
+const mensagem = document.getElementById('mensagem');
+
+botao.addEventListener('click', () => {
+    mensagem.style.display = 'block'; // Exibe a mensagem
+});

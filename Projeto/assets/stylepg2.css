@@ -301,3 +301,10 @@ footer {
   .container form .submit-btn:hover{
     background: #2ecc70;
   }
+
+  #mensagem {
+    display: none;
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+  }

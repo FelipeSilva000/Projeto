@@ -43,9 +43,21 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #94d2bd;
-}
+
+.btn{
+    background-color:#005f73;
+    padding: 9px 12px; /*tamanho da borda dos botoes*/
+    border-radius: 10px; /*arredonda teu botao */
+     /*botao do mouse em cimam do btn */
+    transition: 0.1s; /*tempo de transicao do botao*/
+    
+    }
+    
+    
+    .btn:hover{
+    background-color: #94d2bd ; /*mudar do da animcao do botao*/
+    
+    }
 
 section.post {
     padding: 50px 20px;

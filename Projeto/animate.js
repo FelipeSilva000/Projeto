@@ -23,7 +23,7 @@ $(document).ready(function (){
     });
 });
 
-
+//compra concluida
 const botao = document.getElementById('pedido');  //busca pelo id
 const mensagem = document.getElementById('mensagem');  //busca pelo id
 

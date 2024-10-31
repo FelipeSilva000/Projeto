@@ -168,6 +168,20 @@ section.post h1 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+.tamanho{
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    margin-top: 10px;
+    background-color: azure;
+    cursor: pointer;
+    border:  1px dotted blue;
+}
+.tamanho:focus{
+    background-color: #2ecc70;
+}
+
+
 .comprar {
     margin-top: 20px;
 }

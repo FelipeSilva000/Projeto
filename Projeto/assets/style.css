@@ -9,7 +9,7 @@ body {
     background-color: #f0f0f0;
     color: #333;
 }
-
+/*header*/
 header {
     background-color: #005f73;
     color: white;
@@ -19,14 +19,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+/*logo header*/
 .logo img {
     width: 150px;
     height: auto;
     display: block;
 }
 
-
+/*nav-bar*/
 nav ul {
     list-style: none;
     display: flex;
@@ -35,29 +35,18 @@ nav ul {
     
 }
 
-
-.logo h1 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
+/*lista*/
 nav ul li {
     margin: 0 15px;
 }
-
+/*ancoras*/
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-
+/*links header*/
 .btn{
     background-color:#005f73;
     padding: 9px 12px; /*tamanho da borda dos botoes*/
@@ -67,29 +56,29 @@ nav ul li a {
     
     }
     
-    
+    /*animacao com mouse*/
     .btn:hover{
     background-color: #94d2bd ; /*mudar do da animcao do botao*/
     
     }
 
-
+/*config banner*/
 .banner {
     background-color: #0a9396;
     padding: 100px 20px;
     text-align: center;
     color: white;
 }
-
+/*sub titulo*/
 .banner h2 {
     font-size: 36px;
 }
-
+/*pararafo*/
 .banner p {
     font-size: 18px;
     margin: 10px 0 20px;
 }
-
+/*botao ver produtos*/
 .banner .btn-animate-btn {
     background-color: #94d2bd;
     color: #005f73;
@@ -99,40 +88,37 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/*section*/
 .sapatos {
     padding: 50px 20px;
     text-align: center;
 
 }
-
+/*post olcuto*/
 .produtos {
     display: none;
-    opacity: 0;
 }
-
+/*post ativo js*/
 .produtos.active {
     padding: 50px 20px;
     text-align: center;
     display: inline;
-    opacity: 1;
-    /* Torna totalmente visível */
-
+    
 
 }
-
+/*sub titulo*/
 .produtos h2 {
     font-size: 28px;
     margin-bottom: 30px;
     color: #005f73;
 }
-
+/*posts dos sapatos*/
 .produtos-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+/*post individual*/
 .produto {
     background-color: white;
     border: 1px solid #ddd;
@@ -147,30 +133,30 @@ nav ul li a {
     display: flex;
     flex-direction: column;
 }
-
+/*animacao zoom*/
 .produto:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
+/*config img*/
 .produto img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
-
+/*nome*/
 .produto h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #333;
 }
-
+/*preco*/
 .produto p {
     font-size: 16px;
     margin-bottom: 15px;
     color: #555;
 }
-
+/*link*/
 .btn-comprar {
     background-color: #005f73;
     color: white;
@@ -181,20 +167,13 @@ nav ul li a {
 }
 
 
-
+/*replica produtos p/ animacao js*/
 .produtos2{
     padding: 50px 20px;
     text-align: center;
     
-
-
 }
 
-.produtos2 h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #005f73;
-}
 
 .produtos-container2 {
     display: flex;
@@ -221,19 +200,19 @@ nav ul li a {
     transform: scale(1.1);
     cursor: pointer;
 }
-
+/*img*/
 .produto2 img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
-
+/*nome*/
 .produto2 h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #333;
 }
-
+/*preco*/
 .produto2 p {
     font-size: 16px;
     margin-bottom: 15px;
@@ -255,7 +234,7 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
+/*animacao btn piscando*/
 @keyframes animate-outline {
     from {
         outline: 0px solid #94d2db;
@@ -265,7 +244,7 @@ footer {
         outline: 15px solid #4f9bf900;
     }
 }
-
+/*botao ver produtos */
 .btn-animate-btn {
     background-color: #005f73;
     padding: 9px 12px;

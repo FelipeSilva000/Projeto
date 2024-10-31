@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial','Poppins', sans-serif;
+
 }
 
 body {
@@ -40,9 +43,21 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #94d2bd;
-}
+
+.btn{
+    background-color:#005f73;
+    padding: 9px 12px; /*tamanho da borda dos botoes*/
+    border-radius: 10px; /*arredonda teu botao */
+     /*botao do mouse em cimam do btn */
+    transition: 0.1s; /*tempo de transicao do botao*/
+    
+    }
+    
+    
+    .btn:hover{
+    background-color: #94d2bd ; /*mudar do da animcao do botao*/
+    
+    }
 
 section.post {
     padding: 50px 20px;
@@ -99,13 +114,58 @@ section.post h1 {
     margin-bottom: 10px;
 }
 
-#color {
+#color_B{
     width: 30px;
     height: 30px;
     background-color: black;
     border-radius: 50%;
     display: inline-block;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#color_W{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#color_M {
+    width: 30px;
+    height: 30px;
+    background-color:#321e17;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#color_A {
+    width: 30px;
+    height: 30px;
+    background-color:#ebb167;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#color_D{
+    width: 30px;
+    height: 30px;
+    background-color:#273253;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+#color_X{
+    width: 30px;
+    height: 30px;
+    background-color:#c1b4a6;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .comprar {
@@ -155,3 +215,108 @@ footer {
     margin-top: 40px;
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+/*PAYMANTS*/
+.container{
+    display: none;
+    
+}
+#mensagemSucesso {
+    display: none; /* Inicialmente oculto */
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+/*container principal*/
+.container.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+   
+}
+  /*container formulario*/
+  .container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+  }
+  /*SEUS DADOS e PAGAMENTO*/
+  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  /*organizaçao entre os inputs*/
+  .container form .row .col{
+    flex:1 1 250px;
+  }
+  /*titulo pagamento*/
+  .container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  /*todos os quadrados*/
+  .container form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #005f73;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  /*destaque nas bordas*/
+  .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  /*img cartoes*/
+  .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  /*botao finalizar compra*/
+  .container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #005f73;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color .1s ease;
+  }
+  
+  .container form .submit-btn:hover{
+    background: #2ecc70;
+  }
+
+  #mensagem {
+    display: none;
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+  }

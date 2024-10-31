@@ -13,12 +13,32 @@ body {
 header {
     background-color: #005f73;
     color: white;
-    padding: 20px 0;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    
+}
+
+
 .logo h1 {
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -37,6 +57,23 @@ nav ul li a {
     font-size: 16px;
 }
 
+
+.btn{
+    background-color:#005f73;
+    padding: 9px 12px; /*tamanho da borda dos botoes*/
+    border-radius: 10px; /*arredonda teu botao */
+     /*botao do mouse em cimam do btn */
+    transition: 0.1s; /*tempo de transicao do botao*/
+    
+    }
+    
+    
+    .btn:hover{
+    background-color: #94d2bd ; /*mudar do da animcao do botao*/
+    
+    }
+
+
 .banner {
     background-color: #0a9396;
     padding: 100px 20px;
@@ -53,18 +90,35 @@ nav ul li a {
     margin: 10px 0 20px;
 }
 
-.banner a {
+.banner .btn-animate-btn {
     background-color: #94d2bd;
     color: #005f73;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.sapatos {
+    padding: 50px 20px;
+    text-align: center;
+
 }
 
 .produtos {
+    display: none;
+    opacity: 0;
+}
+
+.produtos.active {
     padding: 50px 20px;
     text-align: center;
+    display: inline;
+    opacity: 1;
+    /* Torna totalmente visível */
+
+
 }
 
 .produtos h2 {
@@ -90,9 +144,11 @@ nav ul li a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
 }
 
-.produto:hover{
+.produto:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -121,6 +177,76 @@ nav ul li a {
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: auto;
+}
+
+
+
+.produtos2{
+    padding: 50px 20px;
+    text-align: center;
+    
+
+
+}
+
+.produtos2 h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #005f73;
+}
+
+.produtos-container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto2 {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.produto2 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.produto2 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.produto2 p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.btn-comprar {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: auto;
 }
 
 footer {
@@ -132,29 +258,25 @@ footer {
 
 @keyframes animate-outline {
     from {
-        outline: 0px solid #94d2db; 
+        outline: 0px solid #94d2db;
     }
+
     to {
-        outline: 15px solid #4f9bf900; 
+        outline: 15px solid #4f9bf900;
     }
-  }
-
-.btn{
-background-color:#005f73;
-padding: 9px 12px; /*tamanho da borda dos botoes*/
-border-radius: 10px; /*arredonda teu botao */
- /*botao do mouse em cimam do btn */
-transition: 0.1s; /*tempo de transicao do botao*/
-
 }
 
-.btn.animate-btn{
-animation: animate-outline 1s ease-out infinite; /*animacao infinita do btn*/
-
-
+.btn-animate-btn {
+    background-color: #005f73;
+    padding: 9px 12px;
+    border-radius: 10px;
+    transition: 0.1s;
 }
 
-.btn:hover{
-background-color: #94d2bd ; /*mudar do da animcao do botao*/
+.btn-animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+}
 
+.btn:hover {
+    background-color: #94d2bd;
 }

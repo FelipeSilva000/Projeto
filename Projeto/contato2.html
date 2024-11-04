@@ -28,20 +28,23 @@
 
             <h2 class="title">Envie sua mensagem:</h2>
 
-            <form action="" method="get">
+            
+            <form action="" method="get" onsubmit="validadorEmail(event)">
 
             <input type="text" name="nome" placeholder="Seu nome:" >
-            <input type="text" name="email" placeholder="Seu E-mail:" >
+            <input type="text" name="email" id="email" placeholder="Seu E-mail:" >
             <input type="text" name="subject" placeholder="Assunto:">
             
             
           <textarea name="messagem" placeholder="Digite sua mensagem"></textarea>
 
           <button type="submit">Enviar Mensagem</button>
-
-
             </form>
-
           </div>
 
     </div>
+
+    <script src="animate.js"></script>
+</body>
+
+</html>

@@ -63,7 +63,7 @@
     <section id="formpagamento">
         <div class="container">
 
-            <form action="">
+            <form action="" method="get" onsubmit="validadorEmail(event)">
         
                 <div class="row">
         
@@ -77,7 +77,7 @@
                         </div>
                         <div class="inputBox">
                             <span>Email :</span>
-                            <input type="email" placeholder="example@example.com">
+                            <input type="email" id="email" placeholder="example@example.com">
                         </div>
                         <div class="inputBox">
                             <span>Endereço :</span>
@@ -137,7 +137,7 @@
             
                 </div>
         
-                <input type="button"  value="confirmar compra" class="submit-btn"  id="pedido">
+                <input type="submit"  value="confirmar compra" class="submit-btn"  id="pedido">
                 <p id="mensagem">Compra finalizada com sucesso!</p>
             </form>
         

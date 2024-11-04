@@ -32,3 +32,15 @@ botao.addEventListener('click', () => { //ouvinte de evento
 });
 
 
+
+function validadorEmail(event) {
+    const email = document.getElementById("email").value;
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+        alert("Por favor, insira um email válido.");
+        event.preventDefault(); // Impede o envio do formulário, se necessário
+    } else {
+        console.log("Email válido:", email);
+    }
+}

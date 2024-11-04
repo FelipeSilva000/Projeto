@@ -63,7 +63,7 @@
     <section id="formpagamento">
         <div class="container">
 
-            <form action="" method="get" onsubmit="validadorEmail(event)">
+            <form action="" method="get" >
         
                 <div class="row">
         
@@ -115,7 +115,7 @@
                         </div>
                         <div class="inputBox">
                             <span>Cartão de crédito:</span>
-                            <input type="number" placeholder="1111-2222-3333-4444">
+                            <input type="number" id="numeroCartao" placeholder="1111-2222-3333-4444">
                         </div>
                         <div class="inputBox">
                             <span>Val mês :</span>
@@ -138,7 +138,10 @@
                 </div>
         
                 <input type="submit"  value="confirmar compra" class="submit-btn"  id="pedido">
-                <p id="mensagem">Compra finalizada com sucesso!</p>
+                
+                <div id="notificacao" style="display:none; position:fixed; top:10px; right:10px; background:green; color:white; padding:10px; border-radius:5px; z-index:1000;">
+                    Compra concluída com sucesso!
+                </div>
             </form>
         
         </div>   

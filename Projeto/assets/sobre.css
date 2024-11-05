@@ -46,22 +46,59 @@
     .titulo{
         text-align: center;
     }
-    
+   
     .imagem {
-        width: 200px;
+        width: 100%;
         flex: 1;
         padding: 20px;
         text-align: center;
     }
     
-    .imagem img{
-        width: 350px;
+    .imagem img {
+        max-width: 100%; /* A imagem se ajusta ao container */
+        width: 500px; /* Largura maior no PC */
     }
+    
     @media (max-width: 768px) {
         .container {
             flex-direction: column;
         }
+    
+        .imagem img {
+            width: 100%; /* Largura de 100% em telas menores */
+        }
     }
+
+
+.post2 {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.post2 img{
+    width: 500px;
+}
+
+.imagem2 {
+    max-width: 100%;
+    width: 500px;
+    padding: 10px;
+   
+}
+
+@media (max-width: 768px) {
+    .post2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem2 {
+        width: 100%; /* Largura de 100% celular */
+    }
+}
+
+
     section{
         padding: 11%;
         text-align: center;
@@ -75,4 +112,36 @@
 
 .post2 img{
     width: 380px;
+}
+
+  
+
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #94d2db; 
+    }
+    to {
+        outline: 15px solid #4f9bf900; 
+    }
+  }
+
+/*Animacao botao header*/
+.btn{
+background-color:#005f73;
+padding: 9px 12px; /*tamanho da borda dos botoes*/
+border-radius: 10px; /*arredonda teu botao */
+ /*botao do mouse em cimam do btn */
+transition: 0.1s; /*tempo de transicao do botao*/
+
+}
+
+.btn.animate-btn{
+animation: animate-outline 1s ease-out infinite; /*animacao infinita do btn*/
+
+
+}
+
+.btn:hover{
+background-color: #94d2bd ; /*mudar do da animcao do botao*/
+
 }

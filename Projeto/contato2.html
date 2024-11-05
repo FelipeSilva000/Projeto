@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="assets/stylepg3.css">
+    <link rel="stylesheet" href="assets/contato2.css">
 
 </head>
 <body>
@@ -15,9 +15,8 @@
         <nav>
             <ul>
                 <li><a class="btn" href="Trabalho.html">Home</a></li>
-                <li><a class="btn" href="#">Produtos</a></li>
-                <li><a class="btn" href="#">Sobre Nós</a></li>
-                <li><a class="btn" href="contato.html">Contato</a></li>
+                <li><a class="btn" href="sobrenos.html">Sobre Nós</a></li>
+                <li><a class="btn" href="contato2.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -29,26 +28,24 @@
 
             <h2 class="title">Envie sua mensagem:</h2>
 
-            <form action="" method="get">
+            
+            <form action="" method="get" onsubmit="validadorEmail(event)">
 
             <input type="text" name="nome" placeholder="Seu nome:" >
-            <input type="text" name="email" placeholder="Seu E-mail:" >
+            <input type="text" name="email" id="email" placeholder="Seu E-mail:" >
             <input type="text" name="subject" placeholder="Assunto:">
             
             
           <textarea name="messagem" placeholder="Digite sua mensagem"></textarea>
 
           <button type="submit">Enviar Mensagem</button>
-
-
             </form>
-
           </div>
 
     </div>
-        
-    <footer>
-        <p>&copy; 2024 Pé de Estilo. Todos os direitos reservados.</p>
-    </footer>
+
+    <script src="animate.js"></script>
 </body>
+
 </html>
+

@@ -1,0 +1,36 @@
+*{
+    font-family: Arial, sans-serif;
+}
+
+.div-principal{
+    height: 500px;
+    width: 80%;
+    margin: 5.4% auto;
+    background-color: rgb(247, 248, 249);
+
+}
+
+.imput-tamanho{
+    width: 70%;
+    
+}
+.informacao{
+    background-color: #005f73;
+    height: 500px;
+    width: 50%;
+    }
+
+.col-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo{
+    margin: 5px;
+    color: white;
+}
+.dados{
+    width: 90%;
+    font-size: 10px;
+    margin: 0;
+}

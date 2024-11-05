@@ -1,36 +1,147 @@
 *{
-    font-family: Arial, sans-serif;
-}
-
-.div-principal{
-    height: 500px;
-    width: 80%;
-    margin: 5.4% auto;
-    background-color: rgb(247, 248, 249);
-
-}
-
-.imput-tamanho{
-    width: 70%;
-    
-}
-.informacao{
-    background-color: #005f73;
-    height: 500px;
-    width: 50%;
-    }
-
-.col-5{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.logo{
-    margin: 5px;
-    color: white;
-}
-.dados{
-    width: 90%;
-    font-size: 10px;
     margin: 0;
-}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+    
+    
+    header {
+        background-color: #005f73;
+        color: white;
+        padding: 20px 0;
+    }
+    
+    .logo h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+     }
+    
+    
+    body{
+     background-color: azure;  
+    }
+    footer {
+        background-color: #005f73;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    @keyframes animate-outline {
+        from {
+            outline: 0px solid #94d2db; 
+        }
+        to {
+            outline: 15px solid #4f9bf900; 
+        }
+      }
+    
+    .btn{
+    background-color:#005f73;
+    padding: 9px 12px; /*tamanho da borda dos botoes*/
+    border-radius: 10px; /*arredonda teu botao */
+     /*botao do mouse em cimam do btn */
+    transition: 0.1s; /*tempo de transicao do botao*/
+    
+    }
+    
+    .btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite; /*animacao infinita do btn*/
+    
+    
+    }
+    
+    .btn:hover{
+    background-color: #94d2bd ; /*mudar do da animcao do botao*/
+    
+    }
+    
+    .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+    }
+    h2{
+    color: black;
+    text-align: center;
+    
+    }
+    .form_box{
+        display: flex;
+        flex-direction: column;
+        background-color: azure;
+        border-radius: 8px;
+        width: 700px;
+    }
+    .form_box .title{
+        padding: 24px 32px;
+        font-size: 24px;
+        border-bottom: wheat;
+    
+    }
+    .form_box form{
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        padding: 32px;
+    }
+    
+    .form_box input,
+    .form_box textarea{
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    }
+    
+    .form_box input:first-child{
+        margin-right: 16px;
+    
+    }
+    .form_box input[name=subject]{
+        width: 100%;
+    }
+    .form_box textarea{
+        width: 100%;
+        height: 180px;
+    }
+    .form_box button{
+        display: block;
+        border: none;
+        outline: none;
+        width: 180px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: #005f73;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .form_box button:hover{
+    
+        background-color: #999;
+    }
+                

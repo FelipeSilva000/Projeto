@@ -177,8 +177,10 @@ section.post h1 {
     cursor: pointer;
     border:  1px dotted blue;
 }
-.tamanho:focus{
-    background-color: #2ecc70;
+
+.tamanho-selecionado {
+    background-color: #12b80cd1; /* Cor de fundo quando selecionado */
+    color: white; /* Cor do texto quando selecionado */
 }
 
 

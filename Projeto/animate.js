@@ -23,6 +23,40 @@ $(document).ready(function (){
     });
 });
 
+              //SELECIONAR TAMANHO//
+
+// Seleciona todos os botões de tamanho e o botão "Comprar"
+const botoesTamanho = document.querySelectorAll('.tamanho');
+const botaoComprar = document.querySelector('.btn-comprar');
+let tamanhoSelecionado = null;
+
+// Adiciona um evento de clique a cada botão de tamanho
+botoesTamanho.forEach(botao => {
+    botao.addEventListener('click', () => {
+        // Remove o destaque do botão anteriormente selecionado
+        if (tamanhoSelecionado) {
+            tamanhoSelecionado.classList.remove('tamanho-selecionado');
+        }
+
+        // Aplica o destaque ao botão atual e armazena a seleção
+        botao.classList.add('tamanho-selecionado');
+        tamanhoSelecionado = botao;
+    });
+});
+
+// Verifica a seleção antes de permitir a compra
+botaoComprar.addEventListener('click', () => {
+    if (!tamanhoSelecionado) {
+        alert('Por favor, selecione um tamanho antes de comprar.');
+    } else {
+        event.preventDefault();
+    }
+});
+
+
+
+
+            //  PAYMENTS //
 
 // Validar email
 function validadorEmail() {
@@ -70,6 +104,7 @@ function luhnCheck(numero) {
 
         soma += n;
         alternar = !alternar;
+        
     }
 
     return soma % 10 === 0; // Retorna true se a soma for divisível por 10

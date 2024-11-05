@@ -1,5 +1,5 @@
 //Uso de J QUERY
-
+//pagina principal
 $(document).ready(function (){ //carregar todo documento
     $('.btn-comprar').on('click',function(){  //ouvinte de elemento botao comprar,
         $('.container').toggleClass('active') //quando clicado add classe active em .container 
@@ -11,7 +11,7 @@ $(document).ready(function (){ //carregar todo documento
     });
 });
 
-
+//css2
 $(document).ready(function (){
     $('.btn-animate-btn').on('click',function(){ //ouvinte de elemento botao ver produtos
         $('.produtos').toggleClass('active') //quando clicado add classe active em .produtos
@@ -91,8 +91,8 @@ function validarCartao() {
 
 // Função para validação do número de cartão de crédito usando o Algoritmo de Luhn
 function luhnCheck(numero) {
-    let soma = 0;
-    let alternar = false;
+    let soma = 0;  //armazenar soma total dos digitos
+    let alternar = false; //verificar se o digito deve ser dobrado
 
     for (let i = numero.length - 1; i >= 0; i--) {
         let n = parseInt(numero[i]);
@@ -104,7 +104,7 @@ function luhnCheck(numero) {
 
         soma += n;
         alternar = !alternar;
-        
+
     }
 
     return soma % 10 === 0; // Retorna true se a soma for divisível por 10
@@ -113,11 +113,11 @@ function luhnCheck(numero) {
 // Notificação
 function mostrarNotificacao(mensagem) {
     const notificacao = document.getElementById('notificacao');
-    notificacao.innerText = mensagem;
+    notificacao.innerText = mensagem; 
     notificacao.style.display = 'block';
 
     setTimeout(() => {
-        notificacao.style.display = 'none';
+        notificacao.style.display = 'none'; 
     }, 5000); // A notificação ficará visível por 5 segundos
 }
 

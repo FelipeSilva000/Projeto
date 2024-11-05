@@ -299,14 +299,14 @@ footer {
   .container form .row .col .inputBox input:focus{
     border:1px solid #000;
   }
-  
+   /*validade e ano gap*/
   .container form .row .col .flex{
     display: flex;
     gap:15px;
   }
   
   .container form .row .col .flex .inputBox{
-    margin-top: 5px;
+    margin-top: 5px; /*magin*/
   }
   /*img cartoes*/
   .container form .row .col .inputBox img{

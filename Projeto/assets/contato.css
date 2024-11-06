@@ -12,10 +12,23 @@
         padding: 20px 0;
     }
     
-    .logo h1 {
-        text-align: center;
-        margin-bottom: 10px;
+    .logo {
+        width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+        height: auto;
+        margin-left: 20px;
     }
+    
+    .header-text {
+        text-align: center;
+        margin-top: -50px; /* Ajuste esse valor para subir mais o texto */
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        color: black;
+        text-align: center;
+    }
+
     nav ul {
         list-style: none;
         display: flex;
@@ -81,7 +94,7 @@
     
     }
     h2{
-    color: black;
+    color: white;
     text-align: center;
     
     }

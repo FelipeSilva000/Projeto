@@ -1,7 +1,7 @@
 //Uso de J QUERY
-//pagina principal
+//pagina secundaria comprar
 $(document).ready(function (){ //carregar todo documento
-    $('.btn-comprar').on('click',function(){  //ouvinte de elemento botao comprar,
+    $('.btn-comprar2').on('click',function(){  //ouvinte de elemento botao comprar,
         $('.container').toggleClass('active') //quando clicado add classe active em .container 
         
         document.querySelector('.container').scrollIntoView({ //usa a classe para localizar o elemento
@@ -11,7 +11,7 @@ $(document).ready(function (){ //carregar todo documento
     });
 });
 
-//css2
+//css princinpal ver produtos
 $(document).ready(function (){
     $('.btn-animate-btn').on('click',function(){ //ouvinte de elemento botao ver produtos
         $('.produtos').toggleClass('active') //quando clicado add classe active em .produtos
@@ -23,11 +23,11 @@ $(document).ready(function (){
     });
 });
 
-              //SELECIONAR TAMANHO//
+              //SELECIONAR TAMANHO sapato//
 
 // Seleciona todos os botões de tamanho e o botão "Comprar"
 const botoesTamanho = document.querySelectorAll('.tamanho');
-const botaoComprar = document.querySelector('.btn-comprar');
+const botaoComprar = document.querySelector('.btn-comprar2');
 let tamanhoSelecionado = null;
 
 // Adiciona um evento de clique a cada botão de tamanho
@@ -56,7 +56,7 @@ botaoComprar.addEventListener('click', () => {
 
 
 
-            //  PAYMENTS //
+               //  PAYMENTS //
 
 // Validar email
 function validadorEmail() {
@@ -71,7 +71,7 @@ function validadorEmail() {
     return true; // Retorna true se o email for válido
 }
 
-// Validar cartão
+               // Validar cartão //
 function validarCartao() {
     const numeroCartao = document.getElementById("numeroCartao").value.replace(/\D/g, ""); // Remover espaços e traços
     const regexCartao = /^\d{13,19}$/; // Aceita apenas números entre 13 e 19 dígitos
@@ -110,7 +110,7 @@ function luhnCheck(numero) {
     return soma % 10 === 0; // Retorna true se a soma for divisível por 10
 }
 
-// Notificação
+             // Notificação  //
 function mostrarNotificacao(mensagem) {
     const notificacao = document.getElementById('notificacao');
     notificacao.innerText = mensagem; 
@@ -137,7 +137,7 @@ function validarFormulario(event) {
     event.preventDefault(); //impedir o envio imediato
 
     if (!verificarPreenchimentoFormulario()) {
-        alert("Por favor, preencha todos os campos.");
+        alert("Por favor, preencha todos os campos."); //alerta
         event.preventDefault(); // Impede o envio do formulário
         return;
     }
@@ -151,13 +151,13 @@ function validarFormulario(event) {
     mostrarNotificacao("Compra concluída com sucesso!");
     setTimeout(() => {
         event.target.submit(); // Envia o formulário após a notificação
-    }, 4000); // 5segundos
+    }, 4000); // 4segundos
 
 }
 
 // Adiciona o evento ao formulário para executar a validação
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
+    const form = document.querySelector("form"); //formulario
     form.addEventListener("submit", validarFormulario);
 });
 

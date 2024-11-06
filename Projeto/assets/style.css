@@ -166,6 +166,9 @@ nav ul li a {
     margin-top: auto;
 }
 
+.limpo {
+    text-decoration: none;
+}
 
 /*replica produtos p/ animacao js*/
 .produtos2{

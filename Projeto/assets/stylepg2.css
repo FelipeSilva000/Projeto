@@ -1,19 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
+/*Aplicado a todos os elemntos do site*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial','Poppins', sans-serif;
-
 }
 
-body {
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
-}
-
+/*Aplicado ao Header do Site*/
 header {
     background-color: #005f73;
     color: white;
@@ -21,43 +14,34 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*Aplicado ao que fica dentro do Body no HTML*/
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*Aplicado a logo no Header*/
 .logo {
-    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    width: 100px;
     height: auto;
     margin-left: 20px;
 }
 
+/*Aplicado ao texto principal do Header*/
 .header-text {
     text-align: center;
-    margin-top: -50px; /* Ajuste esse valor para subir mais o texto */
+    margin-top: -50px;
     margin-bottom: 30px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-
+/*Aplicado aos botões de navegação principal do header */
 .btn{
     background-color:#005f73;
     padding: 9px 12px; /*tamanho da borda dos botoes*/
     border-radius: 10px; /*arredonda teu botao */
      /*botao do mouse em cimam do btn */
     transition: 0.1s; /*tempo de transicao do botao*/
-    
     }
     
     
@@ -66,6 +50,7 @@ nav ul li a {
     
     }
 
+/*Sessão em que o produto se encontra*/
 section.post {
     padding: 50px 20px;
     background-color: #fff;
@@ -94,28 +79,33 @@ section.post h1 {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+/*Classe em que se encontra todos os detalhes do produto*/
 .detalhes {
     max-width: 500px;
 }
 
+/*Aplicado no nome do produto*/
 .titulo h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
+/*Aplicado no código do produto*/
 .codigo {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
 }
 
+/*Aplicado no preço do produto*/
 .preco p {
     font-size: 20px;
     color: #005f73;
     margin-bottom: 10px;
 }
 
+/*Aplicado na bolinha que mostra a cor do produto*/
 .cor p {
     font-size: 16px;
     margin-bottom: 10px;
@@ -174,7 +164,8 @@ section.post h1 {
     display: inline-block;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
-/*selecionar tamanho sapato*/
+
+/*Aplicado na parte de seleção do tamanho do produto*/
 .tamanho{
     width: 35px;
     height: 35px;
@@ -190,7 +181,7 @@ section.post h1 {
     color: white; /* Cor do texto quando selecionado */
 }
 
-
+/*Aplicado ao botão "Comprar"na sessão do produto*/
 .comprar {
     margin-top: 20px;
 }
@@ -213,6 +204,7 @@ section.post h1 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*Aplicado na descriçao do Produto*/
 section.descricao {
     padding: 40px 20px;
     background-color: #f0f0f0;
@@ -230,6 +222,27 @@ section.descricao p {
     line-height: 1.8;
 }
 
+/* Navegação da barra */
+nav ul {
+    list-style: none;/* Remove marcadores de lista */
+    display: flex;/* Flexbox para organizar os itens */
+    justify-content: center;/*centralizar elementos*/
+}
+
+/* Configuração dos itens de lista */
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+/* Links da navegação */
+nav ul li a {
+    color: white;/* Cor do texto branco */
+    text-decoration: none;/* Remove sublinhado */
+    font-size: 16px;/* Tamanho do texto */
+    transition: color 0.3s ease;/*Transição suave para mudanças na propriedade color*/
+}
+
+/*Rodapé do site*/  
 footer {
     background-color: #005f73;
     color: white;
@@ -244,7 +257,7 @@ footer {
 .container{
     display: none;
     
-}
+}   
 #mensagemSucesso {
     display: none; /* Inicialmente oculto */
     margin-top: 20px;

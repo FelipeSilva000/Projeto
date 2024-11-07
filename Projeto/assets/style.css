@@ -1,15 +1,13 @@
+/*Aplicado a todos os elemntos do site*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    text-decoration: none
 }
 
-body {
-    background-color: #f0f0f0;
-    color: #333;
-}
-/*header*/
+/*Aplicado ao Header do Site*/
 header {
     background-color: #005f73;
     color: white;
@@ -19,66 +17,48 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-/*logo header*/
+
+/*Aplicado a logo no Header*/
 .logo img {
     width: 150px;
     height: auto;
     display: block;
 }
 
-/*nav-bar*/
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    
-}
-
-/*lista*/
-nav ul li {
-    margin: 0 15px;
-}
-/*ancoras*/
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/*links header*/
+/*Aplicado aos botões do Header*/
 .btn{
     background-color:#005f73;
     padding: 9px 12px; /*tamanho da borda dos botoes*/
     border-radius: 10px; /*arredonda teu botao */
      /*botao do mouse em cimam do btn */
     transition: 0.1s; /*tempo de transicao do botao*/
-    
     }
     
-    /*animacao com mouse*/
+    /*Animação ao passar o cursor em cima*/
     .btn:hover{
     background-color: #94d2bd ; /*mudar do da animcao do botao*/
-    
     }
 
-/*config banner*/
+/*Aplicado ao Banner do site*/
 .banner {
     background-color: #0a9396;
     padding: 100px 20px;
     text-align: center;
     color: white;
 }
-/*sub titulo*/
+
+/*Aplicado ao Sub-título do Banner*/
 .banner h2 {
     font-size: 36px;
 }
-/*pararafo*/
+
+/*Aplicado aos parágrafos do Banner*/
 .banner p {
     font-size: 18px;
     margin: 10px 0 20px;
 }
-/*botao ver produtos*/
+
+/*Botão animado "Ver Produtos"*/
 .banner .btn-animate-btn {
     background-color: #94d2bd;
     color: #005f73;
@@ -88,37 +68,63 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
 }
-/*section*/
+
+.btn-animate-btn {
+    background-color: #005f73;
+    padding: 9px 12px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.btn-animate-btn {
+    animation: animate-outline 1s ease-out infinite;
+}
+
+/*Sessão dos Sapatos*/
 .sapatos {
     padding: 50px 20px;
     text-align: center;
-
 }
-/*post olcuto*/
+
+/*Aplicado para ocultar metade dos produtos*/
 .produtos {
     display: none;
 }
-/*post ativo js*/
+
+/*Aplicado para os produtos ocultos aparecerem ao clicar em "Ver Produto"*/
 .produtos.active {
     padding: 50px 20px;
     text-align: center;
     display: inline;
-    
-
 }
-/*sub titulo*/
+
+/*Sub-título dos produtos*/
 .produtos h2 {
     font-size: 28px;
     margin-bottom: 30px;
     color: #005f73;
 }
-/*posts dos sapatos*/
+
+/*Container para organizar os produtos*/
 .produtos-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-/*post individual*/
+
+/*Réplica da classe "produtos" para animação JS*/
+.produtos2{
+    padding: 50px 20px;
+    text-align: center;  
+}
+
+.produtos-container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Post individual dos produtos*/
 .produto {
     background-color: white;
     border: 1px solid #ddd;
@@ -133,30 +139,35 @@ nav ul li a {
     display: flex;
     flex-direction: column;
 }
-/*animacao zoom*/
+
+/*Animação de zoom ao passar o cursor sobre o produto*/
 .produto:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-/*config img*/
+
+/*Aplicado a imagem do produto*/
 .produto img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
-/*nome*/
+
+/*Aplicado ao nome do produto*/
 .produto h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: #333;
 }
-/*preco*/
+
+/*Aplicado ao preço do produto*/
 .produto p {
     font-size: 16px;
     margin-bottom: 15px;
     color: #555;
 }
-/*link*/
+
+/*Botão Comprar*/
 .btn-comprar {
     background-color: #005f73;
     color: white;
@@ -166,78 +177,35 @@ nav ul li a {
     margin-top: auto;
 }
 
-.limpo {
-    text-decoration: none;
+/* Navegação da barra */
+nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Flexbox para organizar os itens */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    margin: 0; /* Remove margens */
 }
 
-/*replica produtos p/ animacao js*/
-.produtos2{
-    padding: 50px 20px;
-    text-align: center;
-    
+/* Configuração dos itens de lista */
+nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
 }
 
-
-.produtos-container2 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Links da navegação */
+nav ul li a {
+    color: white; /* Cor do texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho do texto */
 }
 
-.produto2 {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 250px;
-    margin: 15px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: 1s;
-    display: flex;
-    flex-direction: column;
-}
-
-.produto2:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-/*img*/
-.produto2 img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-/*nome*/
-.produto2 h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-}
-/*preco*/
-.produto2 p {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #555;
-}
-
-.btn-comprar {
-    background-color: #005f73;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: auto;
-}
-
+/*Rodapé do site*/
 footer {
     background-color: #005f73;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
-/*animacao btn piscando*/
+
+/*Animação do botão "Ver Produtos" piscando*/
 @keyframes animate-outline {
     from {
         outline: 0px solid #94d2db;
@@ -246,19 +214,4 @@ footer {
     to {
         outline: 15px solid #4f9bf900;
     }
-}
-/*botao ver produtos */
-.btn-animate-btn {
-    background-color: #005f73;
-    padding: 9px 12px;
-    border-radius: 10px;
-    transition: 0.1s;
-}
-
-.btn-animate-btn {
-    animation: animate-outline 1s ease-out infinite;
-}
-
-.btn:hover {
-    background-color: #94d2bd;
 }

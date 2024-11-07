@@ -13,14 +13,14 @@
     }
     
     .logo {
-        width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+        width: 100px;
         height: auto;
         margin-left: 20px;
     }
     
     .header-text {
         text-align: center;
-        margin-top: -50px; /* Ajuste esse valor para subir mais o texto */
+        margin-top: -50px;
         margin-bottom: 30px;
     }
 

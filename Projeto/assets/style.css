@@ -96,7 +96,8 @@ header {
 .produtos-container {
     display: flex;/*Layou flexivel*/
     justify-content: space-around; /*Distribuiçao dos elementos alinhados com espaço iguais entre eles*/
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Responsivo, deixa na vertical e espaçado*/
+    gap: 25px;
 }
 
 /*Réplica da classe "produtos" para animação JS*/
@@ -107,7 +108,8 @@ header {
 .produtos-container2 {
     display: flex;/*Layou flexivel*/
     justify-content: space-around; /*Distribuiçao dos elementos alinhados com espaço iguais entre eles*/
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Responsivo, deixa na vertical e espaçado*/
+    gap: 25px; 
 }
 
 /*Post individual dos produtos*/

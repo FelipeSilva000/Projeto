@@ -1,8 +1,8 @@
 /*Aplicado a todos os elemntos do site*/
 * {
-    margin: 0;
+    margin: 0;                       
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;             /*Margens, espaçamentos, paddin na largura e altura, fonte e sublinhado*/
     font-family: Arial, sans-serif;
     text-decoration: none
 }
@@ -11,17 +11,17 @@
 header {
     background-color: #005f73;
     color: white;
-    padding: 15px 0;
-    display: flex;
+    padding: 15px;
+    display: flex;/*Layou flexivel*/              /*Organizar elementos, elementos em coluna, espaço entre elementos*/
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;/*Distribuiçao dos elementos alinhados com espaço iguais entre eles*/
     align-items: center;
 }
 
 /*Aplicado a logo no Header*/
 .logo img {
     width: 150px;
-    height: auto;
+    height: auto;                     /*Largura, altura proporcional e remove espaçamento vertical*/
     display: block;
 }
 
@@ -29,7 +29,7 @@ header {
 .btn{
     background-color:#005f73;
     padding: 9px 12px; /*tamanho da borda dos botoes*/
-    border-radius: 10px; /*arredonda teu botao */
+    border-radius: 10px; /*arredonda teu botao*/
      /*botao do mouse em cimam do btn */
     transition: 0.1s; /*tempo de transicao do botao*/
     }
@@ -42,7 +42,7 @@ header {
 /*Aplicado ao Banner do site*/
 .banner {
     background-color: #0a9396;
-    padding: 100px 20px;
+    padding: 100px;
     text-align: center;
     color: white;
 }
@@ -65,25 +65,13 @@ header {
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 5px; /*Bordar arredondadas*/
     cursor: pointer;
 }
 
-.btn-animate-btn {
-    background-color: #005f73;
-    padding: 9px 12px;
-    border-radius: 10px;
-    transition: 0.1s;
-}
-
+/*Animação do botão piscando*/
 .btn-animate-btn {
     animation: animate-outline 1s ease-out infinite;
-}
-
-/*Sessão dos Sapatos*/
-.sapatos {
-    padding: 50px 20px;
-    text-align: center;
 }
 
 /*Aplicado para ocultar metade dos produtos*/
@@ -101,15 +89,14 @@ header {
 /*Sub-título dos produtos*/
 .produtos h2 {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;/*Espaçamento abaixo*/
     color: #005f73;
 }
 
 /*Container para organizar os produtos*/
 .produtos-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex;/*Layou flexivel*/
+    justify-content: space-around; /*Distribuiçao dos elementos alinhados com espaço iguais entre eles*/
 }
 
 /*Réplica da classe "produtos" para animação JS*/
@@ -119,24 +106,22 @@ header {
 }
 
 .produtos-container2 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex;/*Layou flexivel*/
+    justify-content: space-around; /*Distribuiçao dos elementos alinhados com espaço iguais entre eles*/
 }
 
 /*Post individual dos produtos*/
 .produto {
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 250px;
+    border-radius: 10px;/*Arredonda as bordas*/
+    width: 250px;/*Largura e altura*/
     margin: 15px;
-    padding: 20px;
+    padding: 20px;/*Espaçamentro até as bordas*/
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: 0.8s;
-    display: flex;
+    display: flex;/*Layou flexivel*/
     flex-direction: column;
 }
 
@@ -150,20 +135,20 @@ header {
 .produto img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 15px;/*Espaçamento abaixo*/
 }
 
 /*Aplicado ao nome do produto*/
 .produto h3 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 10px;/*Espaçamento abaixo*/
     color: #333;
 }
 
 /*Aplicado ao preço do produto*/
 .produto p {
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;/*Espaçamento abaixo*/
     color: #555;
 }
 
@@ -173,14 +158,14 @@ header {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: auto;
+    border-radius: 5px;/*Arredonda as bordas*/
+    margin-top: auto; /*Alinhamento dos botões "Comprar" com o conteiner flexivel*/
 }
 
 /* Navegação da barra */
 nav ul {
     list-style: none; /* Remove marcadores de lista */
-    display: flex; /* Flexbox para organizar os itens */
+    display: flex; /*Layou flexivel*/
     justify-content: flex-end; /* Alinha os itens à direita */
     margin: 0; /* Remove margens */
 }

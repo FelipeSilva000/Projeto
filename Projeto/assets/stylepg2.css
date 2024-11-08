@@ -1,4 +1,4 @@
-/*Aplicado a todos os elemntos do site*/
+/*Aplicado a todos os elemntos do site - OK*/
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@
     font-family: 'Arial','Poppins', sans-serif;
 }
 
-/*Aplicado ao Header do Site*/
+/*Aplicado ao Header do Site - OK*/
 header {
     background-color: #005f73;
     color: white;
     padding: 20px 0;
 }
 
-/*Aplicado ao que fica dentro do Body no HTML*/
+/*Aplicado ao que fica dentro do Body no HTML - OK*/
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -34,7 +34,7 @@ body {
     margin-bottom: 30px;
 }
 
-/*Aplicado aos botões de navegação principal do header */
+/*Aplicado aos botões de navegação principal do header - OK*/
 .btn{
     background-color:#005f73;
     padding: 9px 12px; /*tamanho da borda dos botoes*/
@@ -51,11 +51,10 @@ body {
 
 /*Sessão em que o produto se encontra*/
 section.post {
-    padding: 50px 20px;
+    padding: 50px 20px; /*Espaçamento dos itens até a borda*/
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    margin: 30px 10px;
-    border-radius: 8px;
+    margin: 30px 10px; /*Espaçamento da sessão*/
 }
 
 /*Aplicado ao texto principal da sessão do produto*/
@@ -72,15 +71,15 @@ section.post h1 {
     align-items: center;
 }
 
-.postsp img {
+.postsp img {  /*Lado esquerdo do container*/
     max-width: 350px;
-    height: auto;
+    height: auto; /*altura proporcional*/
     border-radius: 8px;/*Arredonda as pontas*/
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /*Classe em que se encontra todos os detalhes do produto*/
-.detalhes {
+.detalhes {  /*Lado direito do container*/
     max-width: 500px;
 }
 
@@ -207,10 +206,9 @@ section.post h1 {
 
 /*Aplicado na descriçao do Produto*/
 section.descricao {
-    padding: 40px 20px; /*Espaçamento*/
+    padding: 40px 20px; /*Espaçamento dos elementos internos*/
     background-color: #f0f0f0;
-    margin: 20px 10px;
-    border-radius: 8px;
+    margin: 20px 10px; /*Espaçamento externo*/
 }
 
 section.descricao h2 {

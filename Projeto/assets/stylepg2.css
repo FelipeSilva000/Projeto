@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;     /*Margens, espaçamentos, paddin na largura e altura, fonte*/
     font-family: 'Arial','Poppins', sans-serif;
 }
 
@@ -11,7 +11,6 @@ header {
     background-color: #005f73;
     color: white;
     padding: 20px 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*Aplicado ao que fica dentro do Body no HTML*/
@@ -23,7 +22,7 @@ body {
 
 /*Aplicado a logo no Header*/
 .logo {
-    width: 100px;
+    width: 100px; /*Largura, altura proporcional*/
     height: auto;
     margin-left: 20px;
 }
@@ -59,6 +58,7 @@ section.post {
     border-radius: 8px;
 }
 
+/*Aplicado ao texto principal da sessão do produto*/
 section.post h1 {
     text-align: center;
     color: #005f73;
@@ -67,15 +67,15 @@ section.post h1 {
 
 .post-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row; /*Itens organizados na horizontal*/
+    justify-content: space-around; /*Distribui os itens igualmente ao longo da linha*/
     align-items: center;
 }
 
 .postsp img {
     max-width: 350px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px;/*Arredonda as pontas*/
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,12 +105,13 @@ section.post h1 {
     margin-bottom: 10px;
 }
 
-/*Aplicado na bolinha que mostra a cor do produto*/
+/*Aplicado a cor do produto*/
 .cor p {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
+/*Bolinhas com a cor de cada produto*/
 #color_B{
     width: 30px;
     height: 30px;
@@ -189,13 +190,13 @@ section.post h1 {
 .btn-comprar2 {
     background-color: #94d2bd;
     color: #005f73;
-    padding: 10px 20px;
+    padding: 10px 20px; /*Espaçamento*/
     text-decoration: none;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 5px; /*Arredonda as pontas*/
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
     margin-top: 10px; /* Adicionado para espaçamento */
+    cursor: pointer;
 }
 
 .btn-comprar2:hover {
@@ -206,7 +207,7 @@ section.post h1 {
 
 /*Aplicado na descriçao do Produto*/
 section.descricao {
-    padding: 40px 20px;
+    padding: 40px 20px; /*Espaçamento*/
     background-color: #f0f0f0;
     margin: 20px 10px;
     border-radius: 8px;
@@ -249,7 +250,6 @@ footer {
     padding: 20px 0;
     text-align: center;
     margin-top: 40px;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
